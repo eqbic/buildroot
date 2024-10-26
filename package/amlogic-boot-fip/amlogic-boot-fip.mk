@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-AMLOGIC_BOOT_FIP_VERSION = e96b6a694380ff07d5a9e4be644ffe254bd18512
+AMLOGIC_BOOT_FIP_VERSION = 8599bc77b17f38e69275f6145acc5792faab735e
 AMLOGIC_BOOT_FIP_SITE = $(call github,LibreELEC,amlogic-boot-fip,$(AMLOGIC_BOOT_FIP_VERSION))
 AMLOGIC_BOOT_FIP_LICENSE = PROPRIETARY
 AMLOGIC_BOOT_FIP_LICENSE_FILES = LICENSE
