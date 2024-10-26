@@ -42,7 +42,7 @@ index 84da951..7f950de 100644
 --- a/src/gallium/drivers/vc4/meson.build
 +++ b/src/gallium/drivers/vc4/meson.build
 @@ -84,7 +84,7 @@ files_libvc4 = files(
- vc4_c_args = []
+ ]
  
  libvc4_neon = []
 -if host_machine.cpu_family() == 'arm'
@@ -51,8 +51,8 @@ index 84da951..7f950de 100644
      'vc4_neon',
      'vc4_tiling_lt_neon.c',
 @@ -93,7 +93,7 @@ if host_machine.cpu_family() == 'arm'
-     ],
      c_args : '-mfpu=neon',
+     dependencies : vc4_deps,
    )
 -  vc4_c_args += '-DUSE_ARM_ASM'
 +  vc4_c_args += '-DVC4_TILING_LT_NEON'
