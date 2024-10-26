@@ -29,7 +29,7 @@ MESA3D_DEPENDENCIES = \
 
 MESA3D_CONF_OPTS = \
 	-Dgallium-omx=disabled \
-	-Dpower8=disabled
+	-Dpower8=disabled \
 
 ifeq ($(BR2_PACKAGE_MESA3D_DRIVER)$(BR2_PACKAGE_XORG7),yy)
 MESA3D_CONF_OPTS += -Ddri3=enabled
@@ -53,7 +53,7 @@ MESA3D_CONF_OPTS += -Dllvm=disabled
 endif
 
 # enable teflon support to build tf lite delegate
-ifeq ($(BR2_PACKAGE_MESA3D_TEFLON), y)
+ifeq ($(BR2_PACKAGE_MESA3D_TEFLON),y)
 MESA3D_CONF_OPTS += -Dteflon=true
 endif
 
