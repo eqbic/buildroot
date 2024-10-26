@@ -21,6 +21,8 @@ MESA3D_DEPENDENCIES = \
 	host-bison \
 	host-flex \
 	host-python-mako \
+	host-python-pyyaml \
+	host-python-pycparser \
 	expat \
 	libdrm \
 	zlib
